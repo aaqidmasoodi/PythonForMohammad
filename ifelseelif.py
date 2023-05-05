@@ -1,27 +1,16 @@
-mylist = [0,1,2,3]
-
-# and or not
-
-if mylist:
-    mylist.pop()
-    print("Num1")
-if mylist:
-    mylist.pop()
-    print("Num2")
-if mylist:
-    mylist.pop()
-    print("Num3")
-if mylist:
-    mylist.pop()
-    print("Num4")
+students = ["Mohmmad", "abrahim", "john", "Aaqid"]
 
 
-if mylist:
-    mylist.pop()
-    print("Num5")
-if mylist:
-    mylist.pop()
-    print("Num6")
-if mylist:
-    mylist.pop()
-    print("Num7")
+allowed_students = []
+
+# for student in students:
+#     if student == "john":
+#         continue
+#     allowed_students.append(student)
+
+
+for student in students:
+    if student != "john":
+        allowed_students.append(student)
+
+print(allowed_students)
